@@ -21,6 +21,8 @@ notebook's pipeline, with three fixes applied for deployment:
 - `app.py` — the Streamlit app
 - `requirements.txt` — dependencies for Streamlit Community Cloud
 
+🔗 **Live app:** [https://startup-survival-predictor.streamlit.app](https://startup-survival-predictor.streamlit.app)
+
 ## Deploy on Streamlit Community Cloud (free)
 1. Push this folder to a public (or private, if you have Cloud access) GitHub repo.
 2. Go to https://share.streamlit.io → "New app" → pick the repo, branch, and `app.py` as the entry point.

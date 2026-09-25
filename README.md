@@ -1,18 +1,10 @@
-# Startup Survival Time Predictor
+**Problem Statement**
 
-A deployable regression app estimating startup runway (in months) from
-financial, customer, and business inputs. Built on the original Kaggle
-notebook's pipeline, with three fixes applied for deployment:
+Startups often face uncertainty regarding how long they can continue operating due to factors such as available cash, monthly expenses, revenue growth, customer retention, profitability, funding stage, and employee attrition.
+The objective of this project is to build a machine learning regression model that predicts the expected Startup Survival Time (in months) based on financial, customer, employee, and business-related features.
+The project compares multiple regression algorithms, including Multiple Linear Regression, Ridge Regression, Lasso Regression, and Elastic Net Regression, to identify the model that provides the most accurate predictions.
 
-1. **No leakage**: imputation now happens inside the sklearn Pipeline
-   (fit on train folds only), instead of on the full dataset pre-split.
-2. **No invalid predictions**: replaced the notebook's `max(pred, 1)`
-   post-hoc patch with a proper `ClippedLinearRegression` estimator that
-   floors predictions at 1 month. (A log1p target transform was tested
-   first but made R² *worse* — this dataset behaves linearly, not
-   log-linearly — so clipping was the correct fix, not a workaround.)
-3. **Defensible metrics**: 5-fold CV reported alongside the single
-   train/test split (mean R² = 0.894, std = 0.005).
+[`notebook/startup-survival-time-prediction1.ipynb`](notebook/startup-survival-time-prediction1.ipynb).
 
 **🛠️ Tools & Technologies**
 - **Language:** Python

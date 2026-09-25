@@ -14,6 +14,17 @@ notebook's pipeline, with three fixes applied for deployment:
 3. **Defensible metrics**: 5-fold CV reported alongside the single
    train/test split (mean R² = 0.894, std = 0.005).
 
+🛠️ Tools & Technologies
+- **Language:** Python
+- **Data Analysis:** Pandas, NumPy
+- **Visualization:** Matplotlib, Seaborn
+- **Machine Learning:** Scikit-learn
+- **Model Persistence:** Joblib
+- **Web Framework:** Streamlit
+- **Deployment:** Streamlit Community Cloud
+- **Development:** Kaggle Notebook
+- **Version Control:** Git, GitHub
+
 ## Files 
 - `train.py` — retrains the pipeline from the original CSV and saves `model_bundle.joblib`
 - `model_utils.py` — the custom `ClippedLinearRegression` estimator (must be importable for joblib to load the pipeline)

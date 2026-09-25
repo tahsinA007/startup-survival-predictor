@@ -4,7 +4,7 @@ Startups often face uncertainty regarding how long they can continue operating d
 The objective of this project is to build a machine learning regression model that predicts the expected Startup Survival Time (in months) based on financial, customer, employee, and business-related features.
 The project compares multiple regression algorithms, including Multiple Linear Regression, Ridge Regression, Lasso Regression, and Elastic Net Regression, to identify the model that provides the most accurate predictions.
 
-[`notebook/startup-survival-time-prediction1.ipynb`](notebook/startup-survival-time-prediction1.ipynb).
+**To check full codes and markdowns with the data pipeline, please visit the kaggle notebook file(.ipynb) given in the file section of this repo.**
 
 **🛠️ Tools & Technologies**
 - **Language:** Python
